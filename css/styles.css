@@ -1,0 +1,130 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+    --very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main::after{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;  
+}
+
+body{
+    color: var(--very-light-gray);
+    font-weight: 400;
+    font-family: "Lexend Deca";
+    background-color: var(--transparent-white);
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-top: 10%;
+    width: 100vw;
+}
+
+.cars{
+    position: relative;
+    display: flex;
+    width: 1000px;
+    height: 600px;
+}
+
+.sedan-div{
+    padding: 60px;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--bright-orange);
+}
+
+.suvs-div{
+    padding: 60px;
+    background-color: var(--dark-cyan);
+}
+
+.luxury-div{
+    padding: 60px;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--very-dark-cyan);
+}
+
+button{
+    display: block;
+    position: absolute;
+    align-items: end;
+    width: 160px;
+    height: 60px;
+    border-radius: 30px;
+    justify-content: space-between;
+    border: none;
+    bottom: 60px;
+    font-family: "Lexend Deca";
+    font-size: 17px;
+}
+
+button:hover{
+    border: solid 2px;
+    cursor: pointer;
+}
+
+.sedan-btn{
+    color: var(--bright-orange);
+}
+
+.sedan-btn:hover{
+    background-color: var(--bright-orange);
+    color: var(--transparent-white);
+}
+
+.suvs-btn{
+    color: var(--dark-cyan);
+}
+
+.suvs-btn:hover{
+    background-color: var(--dark-cyan);
+    color: var(--transparent-white);
+}
+
+.lux-btn{
+    color: var(--very-dark-cyan);
+}
+
+.lux-btn:hover{
+    background-color: var(--very-dark-cyan);
+    color: var(--transparent-white);
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.1;
+    font-size: 15px;
+}
+
+p{
+    font-family: "Big Shoulders Display";
+    font-size: 40px;
+    padding: 40px 0 40px 0;
+}
+
+.attribution{
+    color: var(--very-dark-cyan);
+    font-size: 10px;
+    font-family: "Lexend Deca";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

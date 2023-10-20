@@ -1,0 +1,163 @@
+@media(max-width:1440px){
+
+    main::after{
+        height: 100vh;
+    }
+
+    .cars{
+        display: flex;
+        width: 760px;
+        height: 400px;
+        margin: auto; 
+    }
+
+    button{
+        width: 140px;
+        height: 40px;    
+        bottom: 20px;
+        font-size: 12px;
+    }
+
+    span{
+        line-height: 1.5;
+        font-size: 14px;
+    }
+
+    p{
+        font-size: 30px;
+        padding: 20px 0 20px 0;
+    }
+
+    .sedan-div{
+        padding: 40px;
+    }
+    
+    .suvs-div{
+        padding: 40px;
+    }
+    
+    .luxury-div{
+        padding: 40px;
+    }
+    
+
+
+    @media(max-width:769px){
+
+        main::after{
+            height: 100vh;
+        }
+
+        .cars img{
+            width: 40px;
+        }
+
+        .cars{
+            display: flex;
+            width: 375px;
+            height: 200px;
+            margin: auto; 
+        }
+    
+        button{
+            width: 70px;
+            height: 20px;    
+            bottom: 10px;
+            font-size: 7px;
+        }
+    
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.5;
+            font-size: 7px;
+        }
+
+        p{
+            font-size: 20px;
+            padding: 10px 0 10px 0;
+        }
+    
+        .sedan-div{
+            padding: 15px;
+        }
+        
+        .suvs-div{
+            padding: 15px;
+        }
+        
+        .luxury-div{
+            padding: 15px;
+        }
+    }
+
+    @media(max-width: 375px){
+
+        main::after{
+            height: 100vh;
+        }
+
+        .container{
+            display: flexbox;
+            flex-direction: column;
+            position: relative;
+            height: 1200px;
+
+        }
+
+        .cars{
+            max-width: 300px;
+            display: flexbox;
+            flex-direction: column;
+            margin-top: 10px;   
+        }
+
+        .sedan-div{
+            padding: 30px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .cars img{
+            width: 50px;
+        }
+        
+        .suvs-div{
+            padding: 30px;
+        }
+        
+        .luxury-div{
+            padding: 30px;
+            border-radius: 0 0 10px 10px;
+
+        }
+        
+        button{
+            display: block;
+            position: relative;
+            bottom: 0;
+            width: 160px;
+            height: 50px;    
+            font-size: 7px;
+            font-size: 15px;
+
+        }
+
+        span{
+            line-height: 2;
+            font-size: 15px;
+            padding: 10px 0 20px 0;
+        }
+
+        p{
+            font-size: 30px;
+            padding: 20px 0 10px 0;
+        }
+
+        .attribution{
+            position: relative;
+            
+        }
+    }
+
+}
