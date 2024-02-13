@@ -12,14 +12,16 @@
     box-sizing: border-box;
 }
 
-main::after{
+main{
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;  
+    height: 100vh;
+    display: flexbox;
 }
 
 body{
+    overflow: hidden; 
     color: var(--very-light-gray);
     font-weight: 400;
     font-family: "Lexend Deca";
@@ -27,97 +29,82 @@ body{
 }
 
 .container{
+    display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    display: flex;
     text-align: left;
     margin-top: 10%;
     width: 100vw;
 }
 
-.cars{
+.container__cars{
     position: relative;
     display: flex;
     width: 1000px;
     height: 600px;
 }
 
-.sedan-div{
+
+.container__cars__sedan{
     padding: 60px;
     border-radius: 10px 0 0 10px;
     background-color: var(--bright-orange);
 }
 
-.suvs-div{
-    padding: 60px;
+.container__cars__suv{
     background-color: var(--dark-cyan);
+    padding: 60px;
 }
 
-.luxury-div{
+.container__cars__luxury{
     padding: 60px;
     border-radius: 0 10px 10px 0;
     background-color: var(--very-dark-cyan);
 }
 
 button{
+    margin: 4rem 0;
     display: block;
     position: absolute;
     align-items: end;
     width: 160px;
     height: 60px;
     border-radius: 30px;
-    justify-content: space-between;
-    border: none;
-    bottom: 60px;
     font-family: "Lexend Deca";
-    font-size: 17px;
-}
-
-button:hover{
-    border: solid 2px;
-    cursor: pointer;
+    font-size: 1em;
+    border: solid 2px var(--very-light-gray);
 }
 
 .sedan-btn{
     color: var(--bright-orange);
 }
 
-.sedan-btn:hover{
-    background-color: var(--bright-orange);
-    color: var(--transparent-white);
-}
-
 .suvs-btn{
     color: var(--dark-cyan);
 }
 
-.suvs-btn:hover{
-    background-color: var(--dark-cyan);
-    color: var(--transparent-white);
-}
-
 .lux-btn{
-    color: var(--very-dark-cyan);
+    color: var(--very-dark-cyan)
 }
 
-.lux-btn:hover{
-    background-color: var(--very-dark-cyan);
-    color: var(--transparent-white);
+button:hover{
+    cursor: pointer;
+    color: var(--very-light-gray);
+    background-color: transparent;
 }
 
-span{
+.container__cars__title{
+    font-family: "Big Shoulders Display";
+    font-size: 40px;
+    padding: 40px 0 40px 0;
+}
+
+.container__cars__description{
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 2.1;
-    font-size: 15px;
-}
-
-p{
-    font-family: "Big Shoulders Display";
-    font-size: 40px;
-    padding: 40px 0 40px 0;
+    font-size: 1em;
 }
 
 .attribution{
